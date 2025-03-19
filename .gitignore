@@ -1,0 +1,16 @@
+# Ignore virtual environments
+venv/
+.env/
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore output files
+preflight_results.json
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
