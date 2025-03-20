@@ -1,6 +1,5 @@
 import argparse
 import os
-import json
 from dataset_checker.check_pdf import check_pdf
 from dataset_checker.utils import generate_summary, save_results
 
