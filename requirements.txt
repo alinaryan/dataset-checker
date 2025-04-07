@@ -2,3 +2,5 @@ pymupdf
 pdfplumber
 opencv-python
 numpy
+
+git+https://github.com/docling-project/docling-core.git

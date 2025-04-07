@@ -1,0 +1,131 @@
+{
+    "/home/alina/dev/pdfs/merged_cell_pdfs/BofA_InterestChecking_en_ADA.pdf": {
+        "merged_table_cells": [
+            {
+                "page": 1,
+                "row": 0,
+                "column": 0,
+                "colspan": 3,
+                "rowspan": 1,
+                "text": "Additional fees"
+            },
+            {
+                "page": 1,
+                "row": 0,
+                "column": 1,
+                "colspan": 3,
+                "rowspan": 1,
+                "text": "Additional fees"
+            },
+            {
+                "page": 1,
+                "row": 0,
+                "column": 2,
+                "colspan": 3,
+                "rowspan": 1,
+                "text": "Additional fees"
+            },
+            {
+                "page": 1,
+                "row": 4,
+                "column": 0,
+                "colspan": 1,
+                "rowspan": 2,
+                "text": "Card replacement"
+            },
+            {
+                "page": 1,
+                "row": 5,
+                "column": 0,
+                "colspan": 1,
+                "rowspan": 2,
+                "text": "Card replacement"
+            },
+            {
+                "page": 1,
+                "row": 8,
+                "column": 0,
+                "colspan": 1,
+                "rowspan": 2,
+                "text": "Domestic wire transfers"
+            },
+            {
+                "page": 1,
+                "row": 9,
+                "column": 0,
+                "colspan": 1,
+                "rowspan": 2,
+                "text": "Domestic wire transfers"
+            },
+            {
+                "page": 1,
+                "row": 10,
+                "column": 0,
+                "colspan": 1,
+                "rowspan": 3,
+                "text": "International wire transfers"
+            },
+            {
+                "page": 1,
+                "row": 11,
+                "column": 0,
+                "colspan": 1,
+                "rowspan": 3,
+                "text": "International wire transfers"
+            },
+            {
+                "page": 1,
+                "row": 12,
+                "column": 0,
+                "colspan": 1,
+                "rowspan": 3,
+                "text": "International wire transfers"
+            },
+            {
+                "page": 1,
+                "row": 13,
+                "column": 0,
+                "colspan": 3,
+                "rowspan": 1,
+                "text": "For international wire transfers, other fees may also apply, including those charged by recipient's financial institution, foreign taxes, and other fees that are part of the wire transfer process. We profit from markups associated with the currency conversion included in our exchange rate (determined solely by us). Before sending in foreign currency, you should consider factors that impact the total cost or the amount available after transfer."
+            },
+            {
+                "page": 1,
+                "row": 13,
+                "column": 1,
+                "colspan": 3,
+                "rowspan": 1,
+                "text": "For international wire transfers, other fees may also apply, including those charged by recipient's financial institution, foreign taxes, and other fees that are part of the wire transfer process. We profit from markups associated with the currency conversion included in our exchange rate (determined solely by us). Before sending in foreign currency, you should consider factors that impact the total cost or the amount available after transfer."
+            },
+            {
+                "page": 1,
+                "row": 13,
+                "column": 2,
+                "colspan": 3,
+                "rowspan": 1,
+                "text": "For international wire transfers, other fees may also apply, including those charged by recipient's financial institution, foreign taxes, and other fees that are part of the wire transfer process. We profit from markups associated with the currency conversion included in our exchange rate (determined solely by us). Before sending in foreign currency, you should consider factors that impact the total cost or the amount available after transfer."
+            },
+            {
+                "page": 1,
+                "row": 14,
+                "column": 1,
+                "colspan": 2,
+                "rowspan": 1,
+                "text": "Per transaction, greater of $5.00 OR 3% of the amount (maximum $10.00) when you use your ATM or debit card, or card number, to make a withdrawal, transfer or payment at another bank and it is processed as a cash disbursement."
+            },
+            {
+                "page": 1,
+                "row": 14,
+                "column": 2,
+                "colspan": 2,
+                "rowspan": 1,
+                "text": "Per transaction, greater of $5.00 OR 3% of the amount (maximum $10.00) when you use your ATM or debit card, or card number, to make a withdrawal, transfer or payment at another bank and it is processed as a cash disbursement."
+            }
+        ],
+        "table_count": 1,
+        "merged_cell_pages": [
+            1
+        ],
+        "page_count": 2
+    }
+}
