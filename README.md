@@ -1,19 +1,18 @@
 # 🛠 Preflight PDF Checker
 
 ## 📌 Overview
-The **Preflight PDF Checker** is a tool designed to evaluate PDFs before converting them using **Docling** or other open-source file converters. It helps identify **critical issues** that should be avoided and **problematic content** that might lead to conversion errors.
+Illuminator is your post-conversion PDF sanity checker. After converting documents with Docling, Illuminator scans the result and flags merged table cells that could cause layout issues or require manual cleanup.
 
-This tool scans PDFs for:
-- **🚨 Critical Issues (Must Avoid)**
-  - Images (including scanned PDFs)
-  - Text within images
-  - OCR-based PDFs
-- **⚠️ Content Prone to Conversion Errors**
-  - Multi-column layouts
-  - Embedded fonts
-  - Charts and tables
-  - Hyperlinks and interactive content
-  - Mathematical notation
+It's a lightweight tool designed for teams working with structured data, helping you catch subtle formatting problems before they snowball.
+
+Illuminator checks for:
+- **⚠️ Merged Table Cells**
+  - Colspan > 1
+  - Rowspan > 1
+  - Empty merged cells
+- **📄 Accurate Page Mapping**
+  - Uses Docling’s provenance metadata (not guesswork!)
+  - Associates each merged cell with its correct page number
 
 ---
 
@@ -56,31 +55,40 @@ python -m dataset_checker.main -d /path/to/pdf/folder/ -o results.json
 ## 📝 Output Format
 ### 📄 Terminal Output (Example)
 
-📂 **PDF Report:** `/home/user/documents/sample.pdf`  
-📄 **Total Pages:** 48  
+📂 File: /home/user/documents/report.pdf
 
-🚨 Critical Issues (Must Avoid)
-- ❌ **Contains Images** (Pages: All pages)  
+⚠️ Merged Table Cells Detected on Pages: 2, 4
+   - Page 2: "Total Revenue" (colspan=2, rowspan=1)
+   - Page 4: "[empty]" (colspan=3, rowspan=1)
 
-⚠️ Content Prone to Conversion Errors
-- 🔸 **Embedded Fonts** (Pages: All pages)  
-- 🔸 **Multi-Column Format** (Pages: 3, 5-7)  
-- 🔸 **Charts / Tables** (Pages: 8, 12-14)  
-- 🔸 **Hyperlinks** (Pages: 2, 10, 20)  
-- 🔸 **Mathematical Notation** (Pages: 15, 21-22)  
+📁 Results saved to results.json 
 
 
 ## 📁 JSON Output (preflight_results.json)
 ```
 {
-    "/home/user/documents/sample.pdf": {
-        "page_count": 48,
-        "contains_images": "All pages",
-        "multi_column_format": [3, 5, 6, 7],
-        "embedded_fonts": "All pages",
-        "charts": [8, 12, 13, 14],
-        "hyperlinks": [2, 10, 20],
-        "mathematical_notation": [15, 21, 22]
+    "/home/user/documents/report.pdf": {
+        "page_count": 10,
+        "table_count": 3,
+        "merged_cell_pages": [2, 4],
+        "merged_table_cells": [
+            {
+                "page": 2,
+                "row": 0,
+                "column": 1,
+                "colspan": 2,
+                "rowspan": 1,
+                "text": "Total Revenue"
+            },
+            {
+                "page": 4,
+                "row": 2,
+                "column": 0,
+                "colspan": 3,
+                "rowspan": 1,
+                "text": "[empty]"
+            }
+        ]
     }
 }
 ```
