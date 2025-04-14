@@ -1,4 +1,4 @@
-# 🛠 Preflight PDF Checker
+# 💡 Illuminator
 
 ## 📌 Overview
 Illuminator is your post-conversion PDF sanity checker. After converting documents with Docling, Illuminator scans the result and flags merged table cells that could cause layout issues or require manual cleanup.
